@@ -59,9 +59,7 @@ The Campaign Management App is a web-based application that allows users to crea
 
    The backend server should now be running on `http://localhost:8080`.
 
-### Frontend Setup
-
-1. Navigate to the frontend directory:
+. Navigate to the frontend directory:
 
     ```bash
     cd ../frontend/campaign-front
@@ -73,7 +71,19 @@ The Campaign Management App is a web-based application that allows users to crea
     npm install
     ```
 
-3. Start the React development server:
+   Make sure the following npm packages are installed:
+   
+   - **axios**: A promise-based HTTP client for making requests to the backend.
+   - **bootstrap**: For styling the application.
+   - **autosuggest**: For implementing the typeahead functionality.
+   
+   These should be installed automatically via `npm install` if listed in the `package.json`. If not, you can install them manually:
+
+    ```bash
+    npm install react react-dom react-router-dom axios bootstrap react-autosuggest
+    ```
+
+4. Start the React development server:
 
     ```bash
     npm start
